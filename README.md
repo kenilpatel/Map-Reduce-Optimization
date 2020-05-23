@@ -23,6 +23,9 @@ You should also set your JAVA_HOME to point to your java installation. For examp
 
 To test Map-Reduce, go to project1/examples/src/main/java and look at the two Map-Reduce examples Simple.java and Join.java. You can compile both Java files using: mvn install and you can run Simple in standalone mode using: ~/hadoop-2.6.5/bin/hadoop jar target/*.jar Simple simple.txt output-simple The file output-simple/part-r-00000 will contain the results.
 
-To compile and run project1:
+To compile and run project2:
 
-cd project1 mvn install rm -rf output ~/hadoop-2.6.5/bin/hadoop jar target/*.jar Histogram pixels-small.txt output
+cd project2 
+mvn install 
+rm -rf output 
+~/hadoop-2.6.5/bin/hadoop jar target/*.jar Histogram pixels-small.txt output
